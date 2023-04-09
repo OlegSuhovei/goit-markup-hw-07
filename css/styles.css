@@ -64,7 +64,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-
   /* object-fit: cover;
   object-position: center; */
 }
@@ -88,7 +87,6 @@ img {
   max-width: 428px;
   padding: 0 15px;
   margin: 0 auto;
-
   /* outline: 2px solid red;
   outline-offset: -2px; */
 }
@@ -1495,6 +1493,10 @@ img {
   .portfolio-list.card-set {
     justify-content: flex-start;
   }
+}
+
+.portfolio-wrapper > img {
+  width: 100%;
 }
 
 .portfolio-wrapper {
