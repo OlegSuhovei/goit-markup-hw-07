@@ -1520,9 +1520,9 @@ img {
   }
 }
 
-.portfolio-wrapper > img {
+/* .portfolio-wrapper > img {
   width: 100%;
-}
+} */
 
 .portfolio-wrapper {
   position: relative;
