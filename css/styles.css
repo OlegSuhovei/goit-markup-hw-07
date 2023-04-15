@@ -304,6 +304,7 @@ img {
 }
 
 @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
@@ -326,6 +327,7 @@ img {
   }
 
   @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
@@ -352,6 +354,7 @@ img {
   }
 
   @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
@@ -1025,14 +1028,15 @@ img {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-
-  min-width: 392px;
-  min-height: 586px;
 
   padding: 72px 24px 24px;
 
+  max-width: 392px;
+  width: calc(100% - 36px);
+  min-height: 586px;
+  
   background-color: var(--modal-background-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1040,13 +1044,6 @@ img {
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--duration) var(--timing-function);
-}
-
-@media screen and (max-width: 427.98px) {
-  .modal {
-    min-width: 300px;
-    min-height: 600px;
-  }
 }
 
 .button-modal {
@@ -1102,13 +1099,7 @@ img {
 }
 
 .modal-form {
-  min-width: 360px;
-}
-
-@media screen and (max-width: 427.98px) {
-  .modal-form {
-    min-width: 250px;
-  }
+  max-width: 360px;
 }
 
 .modal-form-group {
@@ -1313,12 +1304,13 @@ img {
 .menu-toggle {
   min-height: 24px;
   min-width: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   margin-left: auto;
   padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: transparent;
   cursor: pointer;
